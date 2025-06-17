@@ -58,6 +58,9 @@ vim.cmd [[set iskeyword+=-]]
 vim.g.netrw_banner = 0
 vim.g.netrw_mouse = 2
 
+  -- Override Neovim's default `vim.notify` with nvim-notify
+  vim.notify = notify
+
 if vim.g.neovide then
     -- Put anything you want to happen only in Neovide here
 

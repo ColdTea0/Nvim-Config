@@ -1,2 +1,5 @@
 spec "plugins.colorscheme"
 spec "plugins.catppuccin"
+spec "plugins.treesitter"
+spec "plugins.notify"
+spec "plugins.noice"
