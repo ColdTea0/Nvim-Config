@@ -4,8 +4,5 @@ local M = {
   priority = 1000, -- make sure to load this before all the other start plugins
 }
 
-function M.config()
-  vim.cmd.colorscheme "darkplus"
-end
 
 return M
