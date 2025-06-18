@@ -1,27 +1,35 @@
 local M = {
-  "Zeioth/themery.nvim",
-  lazy = false,    -- load on startup to apply theme immediately
-  priority = 1000, -- load before other UI plugins
+	"zaldih/themery.nvim",
 }
 
 function M.config()
-  require("themery").setup({
-    themes = {
-      "catppuccin",
-      "darkplus",
-    },
-    themeConfigFile = "~/.config/nvim/lua/plugins/themery.lua", -- file to store selected theme
-    livePreview = true,                                       -- instantly preview themes
-  })
+	-- Set custom name to the list
+	require("themery").setup({
+		themes = {
+			{
+				name = "toykonight",
+				colorscheme = "tokyonight",
+			},
+			{
+				name = "rose-pine",
+				colorscheme = "rose-pine",
+			},
+			{
+				name = "catppuccin",
+				colorscheme = "catppuccin",
+			},
+			{ name = "onedark", colorscheme = "onedark" },
+			{ name = "darkplus", colorscheme = "darkplus" },
+		},
+		themeConfigFile = "~/.config/nvim/lua/plugins/themery.lua", -- file to store selected theme
+		livePreview = true,
+	})
 
-  -- Optional: keybinding to open themery picker
-  vim.keymap.set("n", "<leader>ut", "<cmd>Themery<CR>", { desc = "Theme picker" })
-
-  -- Themery block
--- This block will be replaced by Themery.
-vim.cmd("colorscheme catppuccin")
-vim.g.theme_id = 1
--- end themery block
+	-- Themery block
+	-- This block will be replaced by Themery.
+	vim.cmd("colorscheme catppuccin")
+	vim.g.theme_id = 1
+	-- end themery block
 end
 
 return M

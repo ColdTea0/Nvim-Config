@@ -1,6 +1,9 @@
-spec "plugins.darkplus"
-spec "plugins.catppuccin"
-spec "plugins.treesitter"
-spec "plugins.notify"
-spec "plugins.noice"
-spec "plugins.themery"
+spec("plugins.darkplus")
+spec("plugins.catppuccin")
+spec("plugins.treesitter")
+spec("plugins.notify")
+spec("plugins.noice")
+spec("plugins.onedark")
+spec("plugins.tokyonight")
+spec("plugins.rose-pine")
+spec("plugins.themery")
